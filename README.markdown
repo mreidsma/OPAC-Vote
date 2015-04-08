@@ -6,13 +6,13 @@ The idea was Kristin Lamb's, of Trinity College Library. I thought this would be
 
 ## Installation
 
-For testing purposes, I'm hosting all of the scripts. All you need to do is drag this bookmarklet to your bookmarks bar, and then click it when you're on a record page in Trinity College Library's Catalogue:
+For testing purposes, I'm hosting all of the server-side scripts (the JS is pulled from the raw version here on Github). All you need to do is drag this bookmarklet to your bookmarks bar, and then click it when you're on a record page in Trinity College Library's Catalogue:
 
-<div style="text-align:center;">
-<a href="#" style="background-color: #575757; color: #fff; font-size: 1.2em; display: block; padding: .5em 1.5em;">Add Trinity Vote</a>
-</div>
+[Add Trinity Vote](javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/mreidsma/OPAC-Vote/master/opacvote.js';})();)
 
 The code needs some cleanup, and Trinity would probably want a more sophisticated way to store the record numbers of the items students vote for (or even add some more info, like author, title, date, etc.). As it is, the votes are recorded to a CSV file stored on the server with the php script that mimics the transparent gif called when the vote link is clicked (to get around the same origin policy of hosted Millennium servers - the php echos back a proper gif response, so the browser will be happy, too).
+
+You can see the CSV of votes here: [http://gvsulib.com/temp/Opac-vote/opacvote.csv](http://gvsulib.com/temp/Opac-vote/opacvote.csv)
 
 ## License
 
