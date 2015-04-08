@@ -71,7 +71,7 @@ if (typeof(element) != 'undefined' && element != null) { // This is a bib detail
             // Could use AJAX but Millennium hosted has strict Same Origin controls
             var voteHack = document.createElement('img');
             voteHack.style.display = 'none';
-            voteHack.src = recorderUrl + 'opacvote.php?record=' + recordNumber;
+            voteHack.src = recorderUrl + 'opacvote.php?record=' + record[1];
             document.body.appendChild(voteHack);
             
             // Add one to clicks to keep folks from voting again
