@@ -8,7 +8,7 @@ The idea was Kristin Lamb's, of Trinity College Library. I thought this would be
 
 For testing purposes, I'm hosting all of the scripts. All you need to do is create a bookmark with the following URL, save it to your bookmarks bar:
 
-`javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://gvsulib.com/temp/Opac-vote/opacvote.js';})();`
+`javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://gvsulib.com/temp/OPAC-Vote/opacvote.js';})();`
 
 To use it, just click on it when you're on a record page in the [Trinity Catalogue](http://lib-cat.trin.cam.ac.uk):
 
