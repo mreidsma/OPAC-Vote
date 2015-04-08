@@ -47,7 +47,7 @@ if (typeof(element) != 'undefined' && element != null) { // This is a bib detail
     // Add the custom CSS for the vote button
     var newStylesheet = document.createElement('link');
     newStylesheet.href = recorderUrl + 'opacvote.css';
-    newStylesheet.rel = 'stylessheet';
+    newStylesheet.rel = 'stylesheet';
     document.getElementsByTagName('head')[0].appendChild(newStylesheet);
     
     // Get record number of record
