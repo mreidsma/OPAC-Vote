@@ -26,11 +26,13 @@ Matthew Reidsma, Grand Valley State University, 2015.
     // The text of the disclaimer
     var linkDisclaimer = 'Duplicates will only be purchased for books with a high number of votes';
 
+    // Restyle the items table to not have the chunky border. 'true' for yes, 'false' for no.
+    var votedLabel = 'Thank you for voting!';
+
     // Full URL for where you put the other files for this script, including http: or https: and trailing slash
     var recorderUrl = 'http://gvsulib.com/temp/OPAC-Vote/'; 
 
-    // Restyle the items table to not have the chunky border. 'true' for yes, 'false' for no.
-    var fancyTable = true;
+   
 
 /*********************************************************************
 
@@ -58,10 +60,14 @@ if (typeof(element) != 'undefined' && element != null) { // This is a bib detail
     
     // Insert link under the holdings table
     var voteLink = document.createElement('div');
+    var disclaimerLink = document.createElement('span');
+    disclaimerLink.id = 'disclaimer-text';
+    disclaimerLink.innerText = linkDisclaimer;
     voteLink.id = 'voteClick';
     voteLink.innerText = linkLabel;
     appendToClass('bibContent', voteLink);
-    
+    appendToClass('bibContent', disclaimerLink);
+
     // Set click handler for new link
     document.getElementById("voteClick").addEventListener("click", function(){
         
@@ -73,6 +79,11 @@ if (typeof(element) != 'undefined' && element != null) { // This is a bib detail
             voteHack.style.display = 'none';
             voteHack.src = recorderUrl + 'opacvote.php?record=' + record[1];
             document.body.appendChild(voteHack);
+            
+            // Change button to show that voting has happened
+            var voteLinkButton = document.getElementById('voteClick');
+            voteLinkButton.className = 'voted';
+            voteLinkButton.innerText = votedLabel;
             
             // Add one to clicks to keep folks from voting again
             clicks++;

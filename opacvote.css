@@ -4,6 +4,22 @@
     color: #fff;
     font-size: 1.1em;
     padding: .5em 1.5em;
-    margin: 1em auto;
+    margin: 1em auto 0;
     cursor: pointer;
+}
+
+#disclaimer-text {
+    display: block;
+    margin: 0 auto 1em;
+    font-style: italic;
+    font-size: .9em;
+}
+
+.voted {
+    background-color: #7a4749 !important;
+}
+
+.bibContent {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
 }
