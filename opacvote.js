@@ -27,7 +27,7 @@ Matthew Reidsma, Grand Valley State University, 2015.
     var linkDisclaimer = 'Duplicates will only be purchased for books with a high number of votes';
 
     // Full URL for where you put the other files for this script, including http: or https: and trailing slash
-    var recorderUrl = 'http://gvsulib.com/temp/trinity_bookmarklet/'; 
+    var recorderUrl = 'http://gvsulib.com/temp/Opac-vote/'; 
 
     // Restyle the items table to not have the chunky border. 'true' for yes, 'false' for no.
     var fancyTable = true;
@@ -68,6 +68,7 @@ if (typeof(element) != 'undefined' && element != null) { // This is a bib detail
         if(clicks < 1) { // Cannot vote more than once on this visit
         
             // Insert image tag with 1x1 transparent gif return from php script
+            // Could use AJAX but Millennium hosted has strict Same Origin controls
             var voteHack = document.createElement('img');
             voteHack.style.display = 'none';
             voteHack.src = recorderUrl + 'opacvote.php?record=' + recordNumber;
