@@ -9,7 +9,7 @@ echo base64_decode('R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw==
 // Could easily do an email or something, too, if that would be easier.
 // Or get fancy and make a database.
 
-$record = array($_GET['record']);
+$record = $_GET['record'];
 $timestamp = date("d/m/Y", time());
 
 $data = array($timestamp, $record);
