@@ -2,7 +2,7 @@
 
 This is a proof of concept hack for Trinity College Library (Cambridge University). The idea is to dynamically add a vote button under the holdings table that would allow folks to "vote" fo the library to purchase more copies of the book. The idea is to reach the kind of audience that doesn't bother putting a hold on a book that is out.
 
-The idea was Kristin Lamb's, of Trinity College Library. I thought this would be an easy way to test the concept out before throwing a lot of College development time at it, so I wrote this on my lunch break on Wednesday, April 8th, 2015. It's not pefect, and may have been affected by a bit of soup that spilld on my keyboard. 
+The idea was Kristin Lamb's, of Trinity College Library. I thought this would be an easy way to test the concept out before throwing a lot of College development time at it, so I wrote this on my lunch break on Wednesday, April 8th, 2015. It's not pefect, and may have been affected by a bit of soup that spilled on my keyboard. 
 
 ## Installation
 
