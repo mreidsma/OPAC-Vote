@@ -27,7 +27,7 @@ Matthew Reidsma, Grand Valley State University, 2015.
     var linkDisclaimer = 'Duplicates will only be purchased for books with a high number of votes';
 
     // Full URL for where you put the other files for this script, including http: or https: and trailing slash
-    var recorderUrl = 'http://gvsulib.com/temp/Opac-vote/'; 
+    var recorderUrl = 'http://gvsulib.com/temp/OPAC-Vote/'; 
 
     // Restyle the items table to not have the chunky border. 'true' for yes, 'false' for no.
     var fancyTable = true;

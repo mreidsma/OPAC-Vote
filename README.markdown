@@ -12,7 +12,7 @@ For testing purposes, I'm hosting all of the scripts. All you need to do is crea
 
 The code needs some cleanup, and Trinity would probably want a more sophisticated way to store the record numbers of the items students vote for (or even add some more info, like author, title, date, etc.). As it is, the votes are recorded to a CSV file stored on the server with the php script that mimics the transparent gif called when the vote link is clicked (to get around the same origin policy of hosted Millennium servers - the php echos back a proper gif response, so the browser will be happy, too).
 
-You can see the CSV of votes here: [http://gvsulib.com/temp/Opac-vote/opacvote.csv](http://gvsulib.com/temp/Opac-vote/opacvote.csv)
+You can see the CSV of votes here: [http://gvsulib.com/temp/Opac-vote/opacvote.csv](http://gvsulib.com/temp/OPAC-Vote/opacvote.csv)
 
 ## License
 
